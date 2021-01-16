@@ -1,10 +1,8 @@
 const express = require('express');
 const app = express();
-const port = 3900;
+const port = 5700;
 const routes=require('./routes')
 
-app.unsubscribe('/',routes)
+app.use('/',routes)
 
-
-app.listen(port, () => console.log(`this app run in port : ${port}`));
-
+app.listen(port, () => console.log(`this app run on: http://localhost:${port}`));
