@@ -7,8 +7,6 @@ class Controller{
     }
     tasks() {
         return tasksController;
-     }
-    
+     }    
 }
-
 module.exports = Object.freeze(new Controller());
